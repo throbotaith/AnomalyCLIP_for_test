@@ -1,0 +1,19 @@
+FROM pytorch/pytorch:2.0.0-cuda11.7-cudnn8-runtime
+
+# install system libraries required by OpenCV and other dependencies
+RUN apt-get update && apt-get install -y \
+    libgl1-mesa-glx \
+    libglib2.0-0 && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /workspace/AnomalyCLIP
+
+# copy requirements first for better docker layer caching
+COPY requirements.txt ./
+
+# install python dependencies
+RUN pip install --no-cache-dir -r requirements.txt && \
+    pip install --no-cache-dir thop ftfy regex opencv-python
+
+COPY . /workspace/AnomalyCLIP
+
+CMD ["bash"]
