@@ -10,7 +10,7 @@
 
 git clone https://github.com/throbotaith/Anomaly_CLIP_for_TEST.git
 
-cd AnomalyCLIP
+cd Anomaly_CLIP_for_TEST/
 
 ```
 
