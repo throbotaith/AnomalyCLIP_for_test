@@ -22,6 +22,7 @@ docker build -t anomalyclip .
 ```
 
 3. 現在のディレクトリをワークスペースとしてコンテナを起動
+4. 
 **Ubuntuの場合**
 ```bash
 
