@@ -5,7 +5,6 @@
 以下の手順でDocker環境上で検証を行います。
 
 1. ワークスペースのディレクトリでリポジトリを取得
-
 ```bash
 
 git clone https://github.com/throbotaith/Anomaly_CLIP_for_TEST.git
@@ -23,13 +22,18 @@ docker build -t anomalyclip .
 ```
 
 3. 現在のディレクトリをワークスペースとしてコンテナを起動
-
+**Ubuntuの場合**
 ```bash
 
 docker run --gpus all -it -v $(pwd):/workspace/AnomalyCLIP anomalyclip
 
 ```
+**Windowsの場合**
+```bash
 
+docker run --gpus all -it -v "${PWD}:/workspace/anomalyclip" anomalyclip
+
+```
 4. AnomalyCLIPディレクトリ内で画像フォルダを作成し、画像をそこに配置
 
 
