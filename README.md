@@ -32,7 +32,7 @@ docker run --gpus all -it -v $(pwd):/workspace/AnomalyCLIP anomalyclip
 **Windowsの場合**
 ```bash
 
-docker run --gpus all -it -v "${PWD}:/workspace/anomalyclip" anomalyclip
+docker run --gpus all -it -v "${PWD}:/workspace/AnomalyCLIP" anomalyclip bash
 
 ```
 4. AnomalyCLIPディレクトリ内で画像フォルダを作成し、画像をそこに配置
