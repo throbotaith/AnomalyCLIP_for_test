@@ -7,9 +7,9 @@
 1. ワークスペースのディレクトリでリポジトリを取得
 ```bash
 
-git clone https://github.com/throbotaith/Anomaly_CLIP_for_TEST.git
+git clone https://github.com/throbotaith/AnomalyCLIP_for_test.git
 
-cd Anomaly_CLIP_for_TEST/
+cd AnomalyCLIP_for_test/
 
 ```
 
