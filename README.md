@@ -21,6 +21,12 @@ docker build -t anomalyclip .
 
 ```
 
+GPUが無い環境で実行する場合は `Dockerfile.cpu` を使用して
+```bash
+docker build -f Dockerfile.cpu -t anomalyclip-cpu .
+```
+
+
 3. 現在のディレクトリをワークスペースとしてコンテナを起動
 4. 
 **Ubuntuの場合**
