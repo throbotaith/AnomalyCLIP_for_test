@@ -11,6 +11,7 @@ git clone https://github.com/throbotaith/AnomalyCLIP_for_test.git
 
 cd AnomalyCLIP_for_test/
 
+
 ```
 
 2. Dockerイメージを取得
